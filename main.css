@@ -1,0 +1,49 @@
+@keyframes hoverIn {
+  0% {border-radius: 100%;
+      width: 20px;
+      height: 20px;
+     }
+  100% {border-radius: 2%;
+        width: 150px;
+        height: 200px;
+     }
+}
+
+@keyframes hoverOut{
+
+}
+
+@keyframes contentDisplay{
+  0% {
+      opacity: 0;
+
+     }
+  100% {
+        opacity: 1;
+       }
+}
+
+.icon{
+  margin: 10px 50px;
+  background-color: #C9EBF7;
+  width: 20px;
+  height: 20px;
+  border: 10px solid #C9EBF7;
+  border-radius: 100%;
+}
+
+.content{
+  word-break:break-all;
+   display: none;
+   opacity: 0;
+}
+
+.icon:hover {
+  animation: hoverIn .30s forwards;
+}
+
+.icon:hover .content{
+  display: inline;
+  animation: contentDisplay 1s forwards;
+
+}
